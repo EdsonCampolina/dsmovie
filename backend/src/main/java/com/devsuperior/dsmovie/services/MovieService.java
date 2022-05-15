@@ -14,7 +14,7 @@ import com.devsuperior.dsmovie.repositories.MovieRepository;
 public class MovieService {
 
 	@Autowired
-	MovieRepository repository;
+	private MovieRepository repository;
 
 	@Transactional(readOnly = true)
 	public Page<MovieDTO> findAll(Pageable pageable) {
